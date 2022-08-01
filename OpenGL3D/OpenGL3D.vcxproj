@@ -78,7 +78,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>EngineOGL/include/;EngineOGL/source/;$(IncludePath)</IncludePath>
+    <IncludePath>EngineOGL/include/;EngineOGL/source/;EngineOGL/vendor/glad/include/;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
@@ -121,6 +121,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -140,13 +141,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="EngineOGL\source\EngineOGL\Game\Win32\CWin32Game.cpp" />
+    <ClCompile Include="EngineOGL\source\EngineOGL\Graphics\Win32\CWin32GraphicsEngine.cpp" />
+    <ClCompile Include="EngineOGL\vendor\glad\src\glad.c" />
+    <ClCompile Include="EngineOGL\vendor\glad\src\glad_wgl.c" />
     <ClCompile Include="Game\main.cpp" />
-    <ClCompile Include="EngineOGL\source\EngineOGL\Window\Owindow.cpp" />
+    <ClCompile Include="EngineOGL\source\EngineOGL\Window\Cwin32window.cpp" />
     <ClCompile Include="EngineOGL\source\EngineOGL\Game\OGame.cpp" />
+    <ClCompile Include="EngineOGL\source\EngineOGL\Graphics\OGraphicsENG.cpp" />
+    <ClCompile Include="EngineOGL\source\EngineOGL\Graphics\OVertexArrayObject.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="EngineOGL\include\EngineOGL\Math\ORect.h" />
+    <ClInclude Include="EngineOGL\include\EngineOGL\OPrerequisites.h" />
     <ClInclude Include="EngineOGL\include\EngineOGL\Window\Owindow.h" />
     <ClInclude Include="EngineOGL\include\EngineOGL\Game\OGame.h" />
+    <ClInclude Include="EngineOGL\include\EngineOGL\Graphics\OGraphicsENG.h" />
+    <ClInclude Include="EngineOGL\include\EngineOGL\Math\Ovec4.h" />
+    <ClInclude Include="EngineOGL\include\EngineOGL\Graphics\OVertexArrayObject.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

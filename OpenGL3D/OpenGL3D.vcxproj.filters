@@ -18,10 +18,28 @@
     <ClCompile Include="Game\main.cpp">
       <Filter>Kaynak Dosyalar</Filter>
     </ClCompile>
-    <ClCompile Include="EngineOGL\source\EngineOGL\Window\Owindow.cpp">
+    <ClCompile Include="EngineOGL\source\EngineOGL\Window\Cwin32window.cpp">
       <Filter>Kaynak Dosyalar</Filter>
     </ClCompile>
     <ClCompile Include="EngineOGL\source\EngineOGL\Game\OGame.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOGL\source\EngineOGL\Graphics\OGraphicsENG.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOGL\vendor\glad\src\glad.c">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOGL\vendor\glad\src\glad_wgl.c">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOGL\source\EngineOGL\Game\Win32\CWin32Game.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOGL\source\EngineOGL\Graphics\Win32\CWin32GraphicsEngine.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
+    <ClCompile Include="EngineOGL\source\EngineOGL\Graphics\OVertexArrayObject.cpp">
       <Filter>Kaynak Dosyalar</Filter>
     </ClCompile>
   </ItemGroup>
@@ -30,6 +48,21 @@
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
     <ClInclude Include="EngineOGL\include\EngineOGL\Game\OGame.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOGL\include\EngineOGL\Graphics\OGraphicsENG.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOGL\include\EngineOGL\Math\Ovec4.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOGL\include\EngineOGL\OPrerequisites.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOGL\include\EngineOGL\Math\ORect.h">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineOGL\include\EngineOGL\Graphics\OVertexArrayObject.h">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
   </ItemGroup>
